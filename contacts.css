@@ -19,7 +19,8 @@ body {
 header {
   text-align: center;
   padding: 2rem 1rem;
-      padding-top: 120px;
+  background-color: #002b5c;
+      
 }
 
 header h1 {
@@ -35,14 +36,17 @@ header h1 {
 }
 
 .contact-info .card {
-  background-color: #002b5c;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
   padding: 1rem;
   border-radius: 12px;
   width: 30%;
   text-align: center;
+}.contact-info .card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(234, 228, 228, 0.628); background-color: #1e5ea8;
+  color: #fcfcfc;
 }
-
 .contact-info .card img {
   width: 32px;
   margin-bottom: 0.5rem;
@@ -221,7 +225,7 @@ textarea {
 
 .form-heading {
   text-align: center;
-  color: #fff;
+  color: #003366;
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
@@ -283,4 +287,32 @@ textarea {
   .form-right form {
     padding: 1.5rem 1rem;
   }
+}
+.services-hero {
+    background-image: url('Our service images/Our services Bg.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner {
+    background-color: rgba(1, 44, 96, 0.85);
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.banner h2 {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+@media (max-width: 480px) {
+.banner h2 {
+font-size: 1.8rem;
+}
 }

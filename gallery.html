@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alucad</title>
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="stylegallery.css" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="common.css" />
+    <link rel="stylesheet" href="gallery.css" />
 </head>
 
 <body>
@@ -26,7 +27,7 @@
 
             <div class="nav-right" id="navMenu">
                 <ul class="nav-links">
-                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./home.html">Home</a></li>
                     <li><a href="./about.html">About us</a></li>
                     <li><a href="./services.html">Our Services</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
@@ -36,14 +37,18 @@
         </div>
     </div>
     <!-- Hero Banner -->
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="hero-content">
             <h1>Gallery</h1>
             <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
                 Latin literature from 45 BC,</p>
         </div>
+    </section> -->
+    <section class="services-hero">
+        <div class="banner" data-aos="fade-down" data-aos-delay="200">
+            <h2>Gallery</h2>
+        </div>
     </section>
-
     <!-- Gallery Description -->
     <section class="description">
         <p>
@@ -61,7 +66,7 @@
             <main class="gallery-section">
                 <div class="gallery-grid">
                     <!-- Image 1 -->
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-aos="fade-up">
                         <label for="img-modal-1">
                             <img src="Gallery img/Image00.jpg" alt="Gallery Image" />
                             <div class="caption">simply dummy text of the printing</div>
@@ -78,7 +83,7 @@
                     </div>
 
                     <!-- Image 2 -->
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-aos="fade-up">
                         <label for="img-modal-2">
                             <img src="Gallery img/Image01.jpg" alt="Gallery Image" />
                             <div class="caption">simply dummy text of the printing</div>
@@ -95,7 +100,7 @@
                     </div>
 
                     <!-- Image 3 -->
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-aos="fade-up">
                         <label for="img-modal-3">
                             <img src="Gallery img/Image02.jpg" alt="Gallery Image" />
                             <div class="caption">simply dummy text of the printing</div>
@@ -112,7 +117,7 @@
                     </div>
 
                     <!-- Image 4 -->
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-aos="fade-up">
                         <label for="img-modal-4">
                             <img src="Gallery img/Image03.jpg" alt="Gallery Image" />
                             <div class="caption">simply dummy text of the printing</div>
@@ -129,7 +134,7 @@
                     </div>
 
                     <!-- Image 5 -->
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-aos="fade-up">
                         <label for="img-modal-5">
                             <img src="Gallery img/Image04.jpg" alt="Gallery Image" />
                             <div class="caption">simply dummy text of the printing</div>
@@ -146,8 +151,8 @@
                     </div>
 
                     <!-- Image 6 -->
-                    <div class="gallery-item">
-                        <label for="img-modal-6">
+                    <div class="gallery-item" data-aos="fade-up">
+                        <label for="img-modal-6" >
                             <img src="Gallery img/Image05.jpg" alt="Gallery Image" />
                             <div class="caption">simply dummy text of the printing</div>
                         </label>
@@ -163,7 +168,7 @@
                     </div>
 
                     <!-- Image 7 -->
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-aos="fade-up">
                         <label for="img-modal-7">
                             <img src="Gallery img/Image06.jpg" alt="Gallery Image" />
                             <div class="caption">simply dummy text of the printing</div>
@@ -180,7 +185,7 @@
                     </div>
 
                     <!-- Image 8 -->
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-aos="fade-up">
                         <label for="img-modal-8">
                             <img src="Gallery img/Image07.jpg" alt="Gallery Image" />
                             <div class="caption">simply dummy text of the printing</div>
@@ -197,7 +202,7 @@
                     </div>
 
                     <!-- Image 9 -->
-                    <div class="gallery-item">
+                    <div class="gallery-item" data-aos="fade-up">
                         <label for="img-modal-9">
                             <img src="Gallery img/image08.jpg" alt="Gallery Image" />
                             <div class="caption">simply dummy text of the printing</div>
@@ -236,7 +241,7 @@
       <div class="footer-column">
         <h3>Quick Links</h3>
         <ul>
-          <li><a href="./index.html">Home</a></li>         
+          <li><a href="./home.html">Home</a></li>         
           <li><a href="./about.html">About us</a></li>
           <li><a href="./services.html">Our Services</a></li>
           <li><a href="./gallery.html">Gallery</a></li>
@@ -256,6 +261,13 @@
   </div>
 </footer>
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
 </body>
 
 </html>
